@@ -29,7 +29,7 @@ app.get("/*", async (req, res)=>{
                 type: "post",
                 body: 'courier (jne, jnt, tiki, sicepat) & waybill'
             },
-            cekresi : {
+            cek_ongkir : {
                 endpoint: "/ongkir",
                 type: "post",
                 body: 'courier, origin (id kota) , destination (id kecamatan), weight (satuan gram)'
