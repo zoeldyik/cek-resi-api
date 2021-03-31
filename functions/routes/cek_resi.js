@@ -24,6 +24,8 @@ router.post("/", async (req, res)=>{
 
         let json = await respon.data.data;
         delete json.courier;
+        
+        console.log(json)
         res.json(json);
     } catch (err) {
         console.log(err);

@@ -21,6 +21,7 @@ router.get("/:idKota", async (req, res)=>{
             data.statusCode = 400;
         }
 
+        console.log(data)
         res.send(data);
 
     } catch (err) {
