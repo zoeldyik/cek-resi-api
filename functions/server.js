@@ -27,7 +27,12 @@ app.get("/*", async (req, res)=>{
             cekresi : {
                 endpoint: "/cekresi",
                 type: "post",
-                body: 'courier & waybill'
+                body: 'courier (jne, jnt, tiki, sicepat) & waybill'
+            },
+            cekresi : {
+                endpoint: "/ongkir",
+                type: "post",
+                body: 'courier, origin (id kota) , destination (id kecamatan), weight (satuan gram)'
             },
             get_provinsi:{
                 endpoint:"/provinsi",
